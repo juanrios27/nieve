@@ -25,10 +25,14 @@
       <a-torus color="black" radius="0.4" radius-tubular="0.015" position="0 1.25 -3" rotation="90 0 0"></a-torus>
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="directional" position="1 1 1"></a-light>
-      <a-camera look-controls="enabled: true" wasd-controls="enabled: false"></a-camera>
+      <a-entity camera
+          look-controls="enabled: true; touchEnabled: false; mouseEnabled: false"
+          wasd-controls="enabled: false">
+      </a-entity>
 
     </a-scene>
   </body>
 
 </html>
+
 
